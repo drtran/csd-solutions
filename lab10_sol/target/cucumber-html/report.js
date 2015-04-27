@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("buying_one_puppies.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("buying_one_puppy.feature");
 formatter.feature({
-  "id": "",
+  "id": "adopting-a-puppy",
   "description": "\r\nAs a puppy lover\r\nI want to adopt puppies\r\nSo they can chew my furniture",
-  "name": "",
+  "name": "Adopting a puppy",
   "keyword": "Feature",
   "line": 1
 });
 formatter.before({
-  "duration": 15635320830,
+  "duration": 9598832463,
   "status": "passed"
 });
 formatter.scenario({
-  "id": ";adopting-a-puppy-using-a-table---\u003e-list\u003cpaymentinfo\u003e",
+  "id": "adopting-a-puppy;adopting-a-puppy-using-a-table---\u003e-list\u003cpaymentinfo\u003e",
   "tags": [
     {
       "name": "@scenario-1",
@@ -75,10 +75,10 @@ formatter.step({
   "line": 17
 });
 formatter.match({
-  "location": "AdoptingPuppiesSteps.visitPuppyAdoptionWebSite()"
+  "location": "BuyingOnePuppySteps.visitPuppyAdoptionWebSite()"
 });
 formatter.result({
-  "duration": 313870617,
+  "duration": 605277766,
   "status": "passed"
 });
 formatter.match({
@@ -88,31 +88,31 @@ formatter.match({
       "offset": 37
     }
   ],
-  "location": "AdoptingPuppiesSteps.I_click_the_View_Details_button_for(String)"
+  "location": "BuyingOnePuppySteps.I_click_the_View_Details_button_for(String)"
 });
 formatter.result({
-  "duration": 839134863,
+  "duration": 750174184,
   "status": "passed"
 });
 formatter.match({
-  "location": "AdoptingPuppiesSteps.I_click_the_Adopt_Me_button()"
+  "location": "BuyingOnePuppySteps.I_click_the_Adopt_Me_button()"
 });
 formatter.result({
-  "duration": 1038451954,
+  "duration": 607243099,
   "status": "passed"
 });
 formatter.match({
-  "location": "AdoptingPuppiesSteps.I_click_the_Complete_the_Adoption_button()"
+  "location": "BuyingOnePuppySteps.I_click_the_Complete_the_Adoption_button()"
 });
 formatter.result({
-  "duration": 788905922,
+  "duration": 376164848,
   "status": "passed"
 });
 formatter.match({
-  "location": "AdoptingPuppiesSteps.I_complete_the_adoption_with(PaymentInfo\u003e)"
+  "location": "BuyingOnePuppySteps.I_complete_the_adoption_with(PaymentInfo\u003e)"
 });
 formatter.result({
-  "duration": 1636198874,
+  "duration": 1705436795,
   "status": "passed"
 });
 formatter.match({
@@ -122,10 +122,10 @@ formatter.match({
       "offset": 14
     }
   ],
-  "location": "AdoptingPuppiesSteps.I_should_see(String)"
+  "location": "BuyingOnePuppySteps.I_should_see(String)"
 });
 formatter.result({
-  "duration": 105633258,
+  "duration": 113006192,
   "status": "passed"
 });
 });

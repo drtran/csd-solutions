@@ -22,23 +22,18 @@ public class Browser {
     public static final int DEFAULT_WAIT_TIME = 30;
 
     private WebDriver driver;
-
     public Browser(WebDriver driver) {
         this.driver = driver;
     }
-
     public void get(String url) {
         driver.get(url);
     }
-
     public String getPageTitle() {
         return driver.getTitle();
     }
-
     public WebDriver getDriver() {
         return driver;
     }
-
     public static int getDefaultWaitTime() {
         return DEFAULT_WAIT_TIME;
     }

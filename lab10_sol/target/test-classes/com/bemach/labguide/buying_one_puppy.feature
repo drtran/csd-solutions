@@ -1,4 +1,4 @@
-Feature:
+Feature: Adopting a puppy
 
   As a puppy lover
   I want to adopt puppies
