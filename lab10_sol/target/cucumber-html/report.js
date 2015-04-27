@@ -7,7 +7,7 @@ formatter.feature({
   "line": 1
 });
 formatter.before({
-  "duration": 7799844813,
+  "duration": 15635320830,
   "status": "passed"
 });
 formatter.scenario({
@@ -78,7 +78,7 @@ formatter.match({
   "location": "AdoptingPuppiesSteps.visitPuppyAdoptionWebSite()"
 });
 formatter.result({
-  "duration": 333770354,
+  "duration": 313870617,
   "status": "passed"
 });
 formatter.match({
@@ -91,28 +91,28 @@ formatter.match({
   "location": "AdoptingPuppiesSteps.I_click_the_View_Details_button_for(String)"
 });
 formatter.result({
-  "duration": 642700748,
+  "duration": 839134863,
   "status": "passed"
 });
 formatter.match({
   "location": "AdoptingPuppiesSteps.I_click_the_Adopt_Me_button()"
 });
 formatter.result({
-  "duration": 1263825361,
+  "duration": 1038451954,
   "status": "passed"
 });
 formatter.match({
   "location": "AdoptingPuppiesSteps.I_click_the_Complete_the_Adoption_button()"
 });
 formatter.result({
-  "duration": 525647045,
+  "duration": 788905922,
   "status": "passed"
 });
 formatter.match({
   "location": "AdoptingPuppiesSteps.I_complete_the_adoption_with(PaymentInfo\u003e)"
 });
 formatter.result({
-  "duration": 1987208431,
+  "duration": 1636198874,
   "status": "passed"
 });
 formatter.match({
@@ -125,7 +125,7 @@ formatter.match({
   "location": "AdoptingPuppiesSteps.I_should_see(String)"
 });
 formatter.result({
-  "duration": 107138058,
+  "duration": 105633258,
   "status": "passed"
 });
 });

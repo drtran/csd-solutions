@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.660135">
-<testcase classname="" name="Adopting a puppy using a table --&gt; List&lt;PaymentInfo&gt;" time="12.660135">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.357516">
+<testcase classname="" name="Adopting a puppy using a table --&gt; List&lt;PaymentInfo&gt;" time="20.357516">
 <system-out><![CDATA[Given I am on the puppy adoption site.......................................passed
 When I click the View Details button for "Brook"............................passed
 And I click the Adopt Me! button............................................passed

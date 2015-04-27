@@ -33,11 +33,10 @@ public class Hook {
             Runtime.getRuntime().addShutdownHook(new Thread() {
                 @Override
                 public void run() {
-                    if (webDriver != null) {
-                        webDriver.manage().deleteCookieNamed("KEY");
-                        webDriver.close();
-                        webDriver.quit();
-                    }
+                if (webDriver != null) {
+                    webDriver.close();
+                    webDriver.quit();
+                }
                 }
             });
         }

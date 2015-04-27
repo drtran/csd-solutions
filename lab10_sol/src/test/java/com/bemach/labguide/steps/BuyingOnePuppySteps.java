@@ -1,4 +1,4 @@
-package com.bemach.labguide;
+package com.bemach.labguide.steps;
 
 import com.bemach.labguide.common.Hook;
 import com.bemach.labguide.common.PaymentInfo;
@@ -24,7 +24,7 @@ import static junit.framework.Assert.assertTrue;
 /**
  * Created by ktran on 4/26/2015.
  */
-public class AdoptingPuppiesSteps {
+public class BuyingOnePuppySteps {
 
     private WebDriver driver;
     private PuppiesMainPage main;
