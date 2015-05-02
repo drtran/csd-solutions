@@ -2,6 +2,12 @@ package com.bemach.labguide.common;
 
 /**
  * Created by ktran on 4/25/2015.
+ *
+ * 'Bad practice to expose fields this way'
+ *
+ *  Always expose them, when required with getters/setters for all
+ *  mutable fields.
+ *
  */
 public class PaymentInfo {
     public String orderName = "Pet Lover";
