@@ -36,14 +36,24 @@ public class BuyingOnePuppySteps {
     public void setUp() {
         driver = Hook.getWebDriver(ChromeDriver.class);
         main = PageFactory.initElements(driver, PuppiesMainPage.class);
-        main.setPageUrl("http://puppies.herokuapp.com");
     }
 
-    @Given("^I am on the puppy adoption site$")
-    public void visitPuppyAdoptionWebSite() throws Throwable {
+    @Given("^I am on the puppy adoption site \"([^\"]*)\"$")
+    public void I_am_on_the_puppy_adoption_site(String url) throws Throwable {
+        main.setPageUrl(url);
         assertTrue("Not at Puppy Adoption Home Page!", main.locationIsVerified());
     }
 
+    @When("^I complete the adoption using this information \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+    public void I_complete_the_adoption_using_this_information_(String name, String address,
+                                                                String email, String paymentType) throws Throwable {
+        PaymentInfo paymentInfo = new PaymentInfo();
+        paymentInfo.orderAddress = address;
+        paymentInfo.orderEmail = email;
+        paymentInfo.orderName = name;
+        paymentInfo.orderPaymentType = paymentType;
+        order.completeOrder(paymentInfo);
+    }
 
     @When("^I click the View Details button for \"([^\"]*)\"$")
     public void I_click_the_View_Details_button_for(String petName) throws Throwable {

@@ -5,7 +5,7 @@ package com.bemach.labguide.common;
  *
  * 'Bad practice to expose fields this way'
  *
- *  Always expose them, when required with getters/setters for all
+ *  Always expose them, when required, with getters/setters for all
  *  mutable fields.
  *
  */

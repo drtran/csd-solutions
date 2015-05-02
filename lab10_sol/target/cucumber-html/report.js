@@ -7,78 +7,64 @@ formatter.feature({
   "line": 1
 });
 formatter.before({
-  "duration": 9598832463,
+  "duration": 3304082642,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "adopting-a-puppy;adopting-a-puppy-using-a-table---\u003e-list\u003cpaymentinfo\u003e",
+  "id": "adopting-a-puppy;adopting-one-puppy-from-the-website",
   "tags": [
     {
-      "name": "@scenario-1",
+      "name": "@simple-one-puppy",
       "line": 7
     }
   ],
   "description": "",
-  "name": "Adopting a puppy using a table --\u003e List\u003cPaymentInfo\u003e",
+  "name": "Adopting one puppy from the website",
   "keyword": "Scenario",
-  "line": 9,
+  "line": 8,
   "type": "scenario"
 });
 formatter.step({
-  "name": "I am on the puppy adoption site",
+  "name": "I am on the puppy adoption site \"http://localhost:3000\"",
   "keyword": "Given ",
-  "line": 10
+  "line": 9
 });
 formatter.step({
   "name": "I click the View Details button for \"Brook\"",
   "keyword": "When ",
-  "line": 11
+  "line": 10
 });
 formatter.step({
   "name": "I click the Adopt Me! button",
   "keyword": "And ",
-  "line": 12
+  "line": 11
 });
 formatter.step({
   "name": "I click the Complete the Adoption button",
   "keyword": "And ",
-  "line": 13
+  "line": 12
 });
 formatter.step({
-  "name": "I complete the adoption with:",
+  "name": "I complete the adoption using this information \"Mr. Cheezy\", \"123 Main Street\", \"cheezy@mail.com\", \"Check\"",
   "keyword": "And ",
-  "line": 14,
-  "rows": [
-    {
-      "cells": [
-        "orderName",
-        "orderAddress",
-        "orderEmail",
-        "orderPaymentType"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "Cheezy",
-        "123 Main Street",
-        "cheezy@example.com",
-        "Check"
-      ],
-      "line": 16
-    }
-  ]
+  "line": 13
 });
 formatter.step({
   "name": "I should see \"Thank you for adopting a puppy!\"",
   "keyword": "Then ",
-  "line": 17
+  "line": 14
 });
 formatter.match({
-  "location": "BuyingOnePuppySteps.visitPuppyAdoptionWebSite()"
+  "arguments": [
+    {
+      "val": "http://localhost:3000",
+      "offset": 33
+    }
+  ],
+  "location": "BuyingOnePuppySteps.I_am_on_the_puppy_adoption_site(String)"
 });
 formatter.result({
-  "duration": 605277766,
+  "duration": 3844760577,
   "status": "passed"
 });
 formatter.match({
@@ -91,28 +77,46 @@ formatter.match({
   "location": "BuyingOnePuppySteps.I_click_the_View_Details_button_for(String)"
 });
 formatter.result({
-  "duration": 750174184,
+  "duration": 601715232,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyingOnePuppySteps.I_click_the_Adopt_Me_button()"
 });
 formatter.result({
-  "duration": 607243099,
+  "duration": 754248096,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyingOnePuppySteps.I_click_the_Complete_the_Adoption_button()"
 });
 formatter.result({
-  "duration": 376164848,
+  "duration": 349251511,
   "status": "passed"
 });
 formatter.match({
-  "location": "BuyingOnePuppySteps.I_complete_the_adoption_with(PaymentInfo\u003e)"
+  "arguments": [
+    {
+      "val": "Mr. Cheezy",
+      "offset": 48
+    },
+    {
+      "val": "123 Main Street",
+      "offset": 62
+    },
+    {
+      "val": "cheezy@mail.com",
+      "offset": 81
+    },
+    {
+      "val": "Check",
+      "offset": 100
+    }
+  ],
+  "location": "BuyingOnePuppySteps.I_complete_the_adoption_using_this_information_(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1705436795,
+  "duration": 1832227210,
   "status": "passed"
 });
 formatter.match({
@@ -125,7 +129,7 @@ formatter.match({
   "location": "BuyingOnePuppySteps.I_should_see(String)"
 });
 formatter.result({
-  "duration": 113006192,
+  "duration": 106914635,
   "status": "passed"
 });
 });
