@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lab13_sol:war exploded">
+    <output-path>$PROJECT_DIR$/target/lab13_sol</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lab13_sol" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/lab13_sol/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="lab13_sol/web/Web" />
+    </root>
+  </artifact>
+</component>

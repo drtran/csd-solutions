@@ -6,8 +6,10 @@ import javax.faces.application.FacesMessage;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
-public class LoginBean implements java.io.Serializable {
-
+/**
+ * Created by ktran on 5/3/2015.
+ */
+public class LoginBean2 {
     private static final long serialVersionUID = 1L;
     private static final Logger log = Logger.getLogger(LoginBean.class);
     public static boolean debug = true;
@@ -15,17 +17,10 @@ public class LoginBean implements java.io.Serializable {
     private String username;
     private String password;
 
-    public LoginBean() {}
+    public LoginBean2() {}
 
     public Logger getLogger() {
         return log;
-    }
-
-    public void debug(String s) {
-        if (debug) {
-            getLogger().debug(s);
-            // System.out.println(s);
-        }
     }
 
     public String getUsername() {
@@ -45,20 +40,13 @@ public class LoginBean implements java.io.Serializable {
     }
 
     public String login() {
-        debug("LoginBean.login()..............................................");
-
-        debug("this.username=" + this.username);
-        debug("this.password=" + this.password);
-
         RestClient client = null;
         AuthenticationDTO authenticationDTO = null;
         int count = 0;
         while (true) {
             try {
-                client = new RestClient(Services.URL_FOR_SERVICE_AUTHENTICATION_VALIDATE);
-                client.getRootWebResource(this.username, this.password, null, null);
-                authenticationDTO = client.getAuthenticationDTO();
-                if (authenticationDTO == null && !StringUtility.isNullOrEmpty(username)) {
+                authenticationDTO = authenticate();
+                if (isNotAuthenticated(authenticationDTO)) {
                     this.username = username.trim();
                     count++;
                     if (count < 10) {
@@ -75,14 +63,12 @@ public class LoginBean implements java.io.Serializable {
             catch (Exception e) {
                 log.error("login error", e);
                 String errorMessage = "Failed to authenticate user!";
-                debug(errorMessage);
                 JsfContextHelper.getFacesContext().addMessage(null, new FacesMessage(errorMessage));
                 return null;
             }
         }
         if (authenticationDTO == null) {
             String errorMessage = "Your login/password does not work; try again.";
-            debug(errorMessage);
             JsfContextHelper.getFacesContext().addMessage(null, new FacesMessage(errorMessage));
             return null;
         }
@@ -98,11 +84,22 @@ public class LoginBean implements java.io.Serializable {
 
         UserSession uSession = (UserSession) JsfContextHelper.getManagedBeanValue("userSession");
         uSession.setUserDTO(authenticationDTO);
-        debug("Successfully retrived user's AuthenticationDTO. UserSession.userId=" + uSession.getUserId());
 
         String mainPageURL = "/pages/calendar.jsf?faces-redirect=true";
-        debug("go to page: " + mainPageURL);
 
         return mainPageURL;
+    }
+
+    private boolean isNotAuthenticated(AuthenticationDTO authenticationDTO) {
+        return authenticationDTO == null && !StringUtility.isNullOrEmpty(username);
+    }
+
+    private AuthenticationDTO authenticate() {
+        RestClient client;
+        AuthenticationDTO authenticationDTO;
+        client = new RestClient(Services.URL_FOR_SERVICE_AUTHENTICATION_VALIDATE);
+        client.getRootWebResource(this.username, this.password, null, null);
+        authenticationDTO = client.getAuthenticationDTO();
+        return authenticationDTO;
     }
 }
