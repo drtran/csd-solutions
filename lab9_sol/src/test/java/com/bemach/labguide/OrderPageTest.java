@@ -27,7 +27,7 @@ public class OrderPageTest {
     public void setUp() {
         driver = Hook.getWebDriver(ChromeDriver.class);
         main = PageFactory.initElements(driver, PuppiesMainPage.class);
-        main.setPageUrl("http://puppies.herokuapp.com");
+        main.setPageUrl("http://localhost:3000");
         viewDetails = main.getViewDetailsPage("Brook");
         adoptMe = viewDetails.adoptMe();
         order = adoptMe.completeTheAdoption();
