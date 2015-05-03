@@ -24,7 +24,7 @@ import static junit.framework.Assert.assertTrue;
 /**
  * Created by ktran on 4/26/2015.
  */
-public class BuyingOnePuppySteps {
+public class AdoptingPuppiesSteps {
 
     private WebDriver driver;
     private PuppiesMainPage main;
@@ -61,7 +61,7 @@ public class BuyingOnePuppySteps {
         assertTrue("Not at View Details Page!", viewDetails.locationIsVerified());
     }
 
-     @And("^I click the Adopt Me! button$")
+    @And("^I click the Adopt Me! button$")
     public void I_click_the_Adopt_Me_button() throws Throwable {
         adoptMe = viewDetails.adoptMe();
         assertTrue("Not at Adopt Me Page!", adoptMe.locationIsVerified());
@@ -74,15 +74,45 @@ public class BuyingOnePuppySteps {
 
     }
 
-    @When("^I complete the adoption with:$")
-    public void I_complete_the_adoption_with(List<PaymentInfo> paymentInfo) throws Throwable {
-        order.completeOrder(paymentInfo.get(0));
+    @When("^I click on Adopt Another Puppy$")
+    public void I_click_on_Adopt_Another_Puppy() throws Throwable {
+        order = adoptMe.adoptAnotherPuppy();
+        PaymentInfo paymentInfo = new PaymentInfo();
     }
 
+    @When("^I complete the adoption with:$")
+    public void I_complete_the_adoption_with(List<PaymentInfo> paymentInfos) throws Throwable {
+        order.completeOrder(paymentInfos.get(0));
+    }
 
+    @When("^I complete the adoption with \"([^\"]*)\":$")
+    public void I_complete_the_adoption_with_(String paymentType, List<PaymentInfo> paymentInfos) throws Throwable {
+        for (PaymentInfo paymentInfo : paymentInfos) {
+            if (paymentType.equals(paymentInfo.orderPaymentType)) {
+                order.completeOrder(paymentInfo);
+            }
+        }
+    }
 
     @Then("^I should see \"([^\"]*)\"$")
     public void I_should_see(String expectedMessage) throws Throwable {
         Assert.assertTrue(expectedMessage, order.lastOrderWasSuccessful());
+    }
+
+    @When("^I complete adopting these puppies:$")
+    public void I_complete_adopting_these_puppies(List<String> puppies) throws Throwable {
+        adoptingSeveralPuppies(puppies);
+    }
+
+    private void adoptingSeveralPuppies(List<String> puppies) throws Throwable {
+        for (int index = 1; index <= puppies.size(); index++) {
+            I_click_the_View_Details_button_for(puppies.get(index-1));
+            I_click_the_Adopt_Me_button();
+            if (index < puppies.size()) {
+                I_click_on_Adopt_Another_Puppy();
+            } else {
+                I_click_the_Complete_the_Adoption_button();
+            }
+        }
     }
 }

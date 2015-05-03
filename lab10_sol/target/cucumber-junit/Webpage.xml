@@ -1,10 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.7932">
-<testcase classname="Adopting a puppy" name="Adopting one puppy from the website" time="10.7932">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="16.760524">
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="9.873458">
 <system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
 When I click the View Details button for "Brook"............................passed
 And I click the Adopt Me! button............................................passed
 And I click the Complete the Adoption button................................passed
-And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+And I complete the adoption with "Check":...................................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="3.369089">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Hanna"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Credit card":.............................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="3.517977">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Ruby Sue".........................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Purchase order":..........................passed
 Then I should see "Thank you for adopting a puppy!".........................passed
 ]]></system-out>
 </testcase>

@@ -37,33 +37,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyingOnePuppySteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/BuyingOnePuppySteps.java">
+      <file leaf-file-name="AdoptMePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/AdoptMePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77737224">
-              <caret line="70" column="77" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/PaymentInfo.java">
+      <file leaf-file-name="adopting_several_puppies.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_several_puppies.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buying_one_puppy.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/buying_one_puppy.feature">
+      <file leaf-file-name="adopting_several_puppies_with_outline.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_several_puppies_with_outline.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adopting_one_puppy.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_one_puppy.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21715328">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -73,10 +84,32 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/RunLab10Cukes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdoptingPuppiesSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingPuppiesSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.1.5/cucumber-core-1.1.5.jar!/cucumber/runtime/Utils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.48">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,59 +118,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/ViewDetailsPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/Hook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Browser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/Browser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#723#724#0" expanded="false" />
-                <element signature="e#759#760#0" expanded="false" />
-                <element signature="e#793#794#0" expanded="false" />
-                <element signature="e#824#825#0" expanded="false" />
-                <element signature="e#859#860#0" expanded="false" />
-                <element signature="e#899#900#0" expanded="false" />
-                <element signature="e#934#935#0" expanded="false" />
-                <element signature="e#963#964#0" expanded="false" />
-                <element signature="e#1008#1009#0" expanded="false" />
-                <element signature="e#1048#1049#0" expanded="false" />
-                <element signature="e#1356#1357#0" expanded="false" />
-                <element signature="e#1441#1442#0" expanded="false" />
-                <element signature="e#1672#1673#0" expanded="false" />
-                <element signature="e#1725#1726#0" expanded="false" />
-                <element signature="e#1982#1983#0" expanded="false" />
-                <element signature="e#2039#2040#0" expanded="false" />
-                <element signature="e#2490#2491#0" expanded="false" />
-                <element signature="e#2554#2555#0" expanded="false" />
-                <element signature="e#2801#2802#0" expanded="false" />
-                <element signature="e#2861#2862#0" expanded="false" />
-                <element signature="e#3128#3129#0" expanded="false" />
-                <element signature="e#3201#3202#0" expanded="false" />
-                <element signature="e#3259#3260#0" expanded="false" />
-                <element signature="e#3317#3318#0" expanded="false" />
-                <element signature="e#4622#4623#0" expanded="false" />
-                <element signature="e#4675#4676#0" expanded="false" />
-                <element signature="e#10125#10126#0" expanded="false" />
-                <element signature="e#10171#10172#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +143,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/src/test/resources/buying_one_puppies.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/AdoptMePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/AdoptingPuppiesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/AdoptingPuppiesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/OrderPageTest.java" />
@@ -169,10 +150,20 @@
         <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/pages/AdoptMePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/Hook.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/Browser.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/buying_one_puppy.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/RunLab10Cukes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/PaymentInfo.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/buying_one_puppy.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/adopting_two_puppies.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/AdoptMePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/BuyingOnePuppySteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingSeveralPuppies.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingSeveralPuppiesSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingOnePuppySteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/adopting_several_puppies.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/adopting_one_puppy.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/adopting_several_puppies_with_different_payment__types.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/RunLab10Cukes.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/bemach/labguide/adopting_several_puppies_with_outline.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingPuppiesSteps.java" />
       </list>
     </option>
   </component>
@@ -273,6 +264,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="labguide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,7 +429,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab9_sol" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.1.5/cucumber-core-1.1.5.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -442,6 +437,7 @@
       <recent name="C:\csd2015\java-ws\lab10_sol\src\main\java\com\bemach\labguide" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\csd2015\java-ws\lab10_sol\src\test\resources\com\bemach\labguide\features" />
       <recent name="C:\csd2015\java-ws\lab10_sol\src\test\resources\com\bemach\labguide" />
       <recent name="C:\csd2015\java-ws\lab10_sol\src\test" />
       <recent name="C:\csd2015\java-ws\lab10_sol\src" />
@@ -880,12 +876,12 @@
       <option name="number" value="Default" />
       <updated>1430088394840</updated>
       <workItem from="1430088402904" duration="12534000" />
-      <workItem from="1430577307100" duration="2379000" />
+      <workItem from="1430577307100" duration="7428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14913000" />
+    <option name="totallyTimeSpent" value="19962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="407" y="5" width="1400" height="992" extended-state="0" />
@@ -908,7 +904,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39907727" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -930,7 +926,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingPuppiesSteps.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingPuppiesSteps.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1009,14 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/AdoptMePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21715328">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1080,10 +1084,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/ViewDetailsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_two_puppies.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49635038">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/PaymentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1096,10 +1108,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/buying_one_puppy.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/AdoptMePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/pages/ViewDetailsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_several_puppies.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.1.5/cucumber-core-1.1.5.jar!/cucumber/runtime/StepDefinitionMatch.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.587473">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1107,28 +1146,44 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/RunLab10Cukes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/common/PaymentInfo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.1.5/cucumber-core-1.1.5.jar!/cucumber/runtime/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state vertical-scroll-proportion="-6.48">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/BuyingOnePuppySteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_several_puppies_with_outline.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77737224">
-          <caret line="70" column="77" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/steps/AdoptingPuppiesSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/bemach/labguide/features/adopting_one_puppy.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21715328">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

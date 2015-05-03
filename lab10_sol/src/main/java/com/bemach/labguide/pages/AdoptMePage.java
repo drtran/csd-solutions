@@ -22,6 +22,12 @@ public class AdoptMePage {
         return PageFactory.initElements(browser.getDriver(), OrderPage.class);
     }
 
+    public OrderPage adoptAnotherPuppy() {
+        WebElement webElement = browser.findByElement(By.xpath("//input[@value='Adopt Another Puppy']"));
+        webElement.click();
+        return PageFactory.initElements(browser.getDriver(), OrderPage.class);
+    }
+
     public boolean locationIsVerified() {
         WebElement webElement = browser.findByElement(By.xpath("//input[@value='Complete the Adoption']"));
         return "Complete the Adoption".equals(webElement.getAttribute("value"));
