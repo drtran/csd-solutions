@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="2.904108">
+<testcase classname="Getting Information for several customers" name="Getting a customer record by a given customer ID" time="2.508677">
+<system-out><![CDATA[And that a customer exists with "EASTC", "Eastern Connection", "Ann Devon", "Sales Agent", and "(171) 555-0297".passed
+When I call MongoRS service with a given "EASTC"............................passed
+Then I should receive a customer record with "EASTC", "Eastern Connection", "Ann Devon", "Sales Agent", and "(171) 555-0297".passed
+]]></system-out>
+</testcase>
+<testcase classname="Getting Information for several customers" name="Getting a customer record by a given customer ID" time="0.395431">
+<system-out><![CDATA[And that a customer exists with "DUMON", "Du monde entier", "Janine Labrune", "Owner", and "France".passed
+When I call MongoRS service with a given "DUMON"............................passed
+Then I should receive a customer record with "DUMON", "Du monde entier", "Janine Labrune", "Owner", and "France".passed
+]]></system-out>
+</testcase>
+</testsuite>
