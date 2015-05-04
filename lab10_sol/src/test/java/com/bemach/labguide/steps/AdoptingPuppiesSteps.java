@@ -115,4 +115,29 @@ public class AdoptingPuppiesSteps {
             }
         }
     }
+
+    @When("^I click the Change your mind button and accept OK$")
+    public void I_click_the_Change_your_mind_button_and_accept_OK() throws Throwable {
+        main = adoptMe.changeYourMind();
+    }
+
+    @Then("^I should be back on the home page$")
+    public void I_should_be_back_on_the_home_page() throws Throwable {
+        assertTrue("Not at Puppy Adoption Home Page!", main.locationIsVerified());
+    }
+
+    @When("^I complete the adoption using no information$")
+    public void I_complete_the_adoption_using_no_information() throws Throwable {
+        PaymentInfo paymentInfo = new PaymentInfo();
+        paymentInfo.orderAddress = "";
+        paymentInfo.orderEmail = "";
+        paymentInfo.orderName = "";
+        paymentInfo.orderPaymentType = "";
+        order.completeOrder(paymentInfo);
+    }
+
+    @Then("^I should see this error message \"([^\"]*)\"$")
+    public void I_should_see_this_error_message(String errorMsg) throws Throwable {
+        assertTrue("Unexpected error message!", order.verifyErrorMessage(errorMsg));
+    }
 }

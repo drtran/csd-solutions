@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"html:target/cucumber-html","junit:target/cucumber-junit/Webpage.xml"},
         features = "src/test/resources/com/bemach/labguide"
-        , tags = {"@run-all"}
+        , tags = {" @no-payment-info"}
         )
 public class RunLab10Cukes {
 }

@@ -51,4 +51,9 @@ public class OrderPage {
         WebElement thankYouNote = browser.findByElement(By.xpath("//p[@id='notice']"));
         return "Thank you for adopting a puppy!".equals(thankYouNote.getText());
     }
+
+    public boolean verifyErrorMessage(String errorMsg) {
+        WebElement error = browser.findByElement(By.xpath("//*[@id='error_explanation']/h2"));
+        return errorMsg.equals(error.getText());
+    }
 }

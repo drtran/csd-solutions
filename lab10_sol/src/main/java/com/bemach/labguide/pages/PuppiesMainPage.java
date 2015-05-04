@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class PuppiesMainPage {
 
+    public static final String ID_CONTENT_H1 = "//*[@id='content']/h1";
     private final Browser browser;
     private String url;
 
@@ -26,7 +27,8 @@ public class PuppiesMainPage {
     }
 
     private String getPuppyListTitle() {
-        WebElement webElement = browser.findByElement(By.xpath("//*[@id='content']/h1"));
+        browser.waitForVisible(By.xpath(ID_CONTENT_H1));
+        WebElement webElement = browser.findByElement(By.xpath(ID_CONTENT_H1));
         return webElement.getText();
     }
 

@@ -32,4 +32,14 @@ public class AdoptMePage {
         WebElement webElement = browser.findByElement(By.xpath("//input[@value='Complete the Adoption']"));
         return "Complete the Adoption".equals(webElement.getAttribute("value"));
     }
+
+    public PuppiesMainPage changeYourMind() {
+        WebElement webElement = browser.findByElement(By.xpath("//input[@value='Change your mind']"));
+        webElement.click();
+        browser.sleep(1000);
+        browser.getDriver().switchTo().alert().accept();
+        browser.sleep(1000);
+        browser.getDriver().switchTo().alert().accept();
+        return PageFactory.initElements(browser.getDriver(), PuppiesMainPage.class);
+    }
 }
