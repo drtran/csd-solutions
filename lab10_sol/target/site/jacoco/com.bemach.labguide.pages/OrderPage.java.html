@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>OrderPage.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab10_sol</a> &gt; <a href="index.html" class="el_package">com.bemach.labguide.pages</a> &gt; <span class="el_source">OrderPage.java</span></div><h1>OrderPage.java</h1><pre class="source lang-java linenums">package com.bemach.labguide.pages;
+
+import com.bemach.labguide.common.Browser;
+import com.bemach.labguide.common.PaymentInfo;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
+
+/**
+ * Created by ktran on 4/25/2015.
+ */
+public class OrderPage {
+
+    private final Browser browser;
+
+<span class="fc" id="L19">    public OrderPage(WebDriver driver) {</span>
+<span class="fc" id="L20">        this.browser = new Browser(driver);</span>
+<span class="fc" id="L21">    }</span>
+
+    public boolean locationIsVerified() {
+<span class="nc" id="L24">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@name='commit']&quot;));</span>
+<span class="nc" id="L25">        return &quot;Place Order&quot;.equals(webElement.getAttribute(&quot;value&quot;));</span>
+    }
+
+    public void completeOrder(PaymentInfo paymentInfo) {
+<span class="fc" id="L29">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@id='order_name']&quot;));</span>
+<span class="fc" id="L30">        webElement.sendKeys(paymentInfo.orderName);</span>
+<span class="fc" id="L31">        webElement = browser.findByElement(By.xpath(&quot;//textarea[@id='order_address']&quot;));</span>
+<span class="fc" id="L32">        webElement.sendKeys(paymentInfo.orderAddress);</span>
+<span class="fc" id="L33">        webElement = browser.findByElement(By.xpath(&quot;//input[@id='order_email']&quot;));</span>
+<span class="fc" id="L34">        webElement.sendKeys(paymentInfo.orderEmail);</span>
+<span class="fc" id="L35">        WebElement select = browser.findByElement(By.xpath(&quot;//select[@id='order_pay_type']&quot;));</span>
+
+<span class="fc" id="L37">        Select dropDown = new Select(select);</span>
+<span class="fc" id="L38">        List&lt;WebElement&gt; options = dropDown.getOptions();</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (WebElement option : options) {</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">            if (option.getText().equals(paymentInfo.orderPaymentType)) {</span>
+<span class="fc" id="L41">                option.click();</span>
+<span class="fc" id="L42">                break;</span>
+            }
+<span class="fc" id="L44">        }</span>
+
+<span class="fc" id="L46">        WebElement commit = browser.findByElement(By.xpath(&quot;//input[@name='commit']&quot;));</span>
+<span class="fc" id="L47">        commit.click();</span>
+<span class="fc" id="L48">    }</span>
+
+    public boolean lastOrderWasSuccessful() {
+<span class="fc" id="L51">        WebElement thankYouNote = browser.findByElement(By.xpath(&quot;//p[@id='notice']&quot;));</span>
+<span class="fc" id="L52">        return &quot;Thank you for adopting a puppy!&quot;.equals(thankYouNote.getText());</span>
+    }
+
+    public boolean verifyErrorMessage(String errorMsg) {
+<span class="fc" id="L56">        WebElement error = browser.findByElement(By.xpath(&quot;//*[@id='error_explanation']/h2&quot;));</span>
+<span class="fc" id="L57">        return errorMsg.equals(error.getText());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.2.201302030002</span></div></body></html>

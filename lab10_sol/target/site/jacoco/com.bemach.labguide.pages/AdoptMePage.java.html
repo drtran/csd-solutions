@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>AdoptMePage.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab10_sol</a> &gt; <a href="index.html" class="el_package">com.bemach.labguide.pages</a> &gt; <span class="el_source">AdoptMePage.java</span></div><h1>AdoptMePage.java</h1><pre class="source lang-java linenums">package com.bemach.labguide.pages;
+
+import com.bemach.labguide.common.Browser;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+/**
+ * Created by ktran on 4/25/2015.
+ */
+public class AdoptMePage {
+    private final Browser browser;
+
+<span class="fc" id="L15">    public AdoptMePage (WebDriver driver) {</span>
+<span class="fc" id="L16">        this.browser = new Browser(driver);</span>
+<span class="fc" id="L17">    }</span>
+
+    public OrderPage completeTheAdoption() {
+<span class="fc" id="L20">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@value='Complete the Adoption']&quot;));</span>
+<span class="fc" id="L21">        webElement.click();</span>
+<span class="fc" id="L22">        return PageFactory.initElements(browser.getDriver(), OrderPage.class);</span>
+    }
+
+    public OrderPage adoptAnotherPuppy() {
+<span class="fc" id="L26">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@value='Adopt Another Puppy']&quot;));</span>
+<span class="fc" id="L27">        webElement.click();</span>
+<span class="fc" id="L28">        return PageFactory.initElements(browser.getDriver(), OrderPage.class);</span>
+    }
+
+    public boolean locationIsVerified() {
+<span class="fc" id="L32">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@value='Complete the Adoption']&quot;));</span>
+<span class="fc" id="L33">        return &quot;Complete the Adoption&quot;.equals(webElement.getAttribute(&quot;value&quot;));</span>
+    }
+
+    public PuppiesMainPage changeYourMind() {
+<span class="fc" id="L37">        WebElement webElement = browser.findByElement(By.xpath(&quot;//input[@value='Change your mind']&quot;));</span>
+<span class="fc" id="L38">        webElement.click();</span>
+<span class="fc" id="L39">        browser.sleep(1000);</span>
+<span class="fc" id="L40">        browser.getDriver().switchTo().alert().accept();</span>
+<span class="fc" id="L41">        browser.sleep(1000);</span>
+<span class="fc" id="L42">        browser.getDriver().switchTo().alert().accept();</span>
+<span class="fc" id="L43">        return PageFactory.initElements(browser.getDriver(), PuppiesMainPage.class);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.2.201302030002</span></div></body></html>

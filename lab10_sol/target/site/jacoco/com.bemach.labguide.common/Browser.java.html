@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Browser.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab10_sol</a> &gt; <a href="index.html" class="el_package">com.bemach.labguide.common</a> &gt; <span class="el_source">Browser.java</span></div><h1>Browser.java</h1><pre class="source lang-java linenums">package com.bemach.labguide.common;
+
+/**
+ * Created by ktran on 4/25/2015.
+ */
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
+
+public class Browser {
+<span class="fc" id="L21">    private static Logger logger = Logger.getLogger(Browser.class.toString());</span>
+    public static final int DEFAULT_WAIT_TIME = 30;
+
+    private WebDriver driver;
+<span class="fc" id="L25">    public Browser(WebDriver driver) {</span>
+<span class="fc" id="L26">        this.driver = driver;</span>
+<span class="fc" id="L27">    }</span>
+    public void get(String url) {
+<span class="fc" id="L29">        driver.get(url);</span>
+<span class="fc" id="L30">    }</span>
+    public String getPageTitle() {
+<span class="nc" id="L32">        return driver.getTitle();</span>
+    }
+    public WebDriver getDriver() {
+<span class="fc" id="L35">        return driver;</span>
+    }
+    public static int getDefaultWaitTime() {
+<span class="nc" id="L38">        return DEFAULT_WAIT_TIME;</span>
+    }
+
+    public void sleep(long miliseconds) {
+        try {
+<span class="fc" id="L43">            logger.info(&quot;sleep for :&quot; + miliseconds + &quot; miliseconds&quot;);</span>
+<span class="fc" id="L44">            Thread.sleep(miliseconds);</span>
+<span class="nc" id="L45">        } catch (InterruptedException e) {</span>
+<span class="nc" id="L46">            e.printStackTrace();</span>
+<span class="fc" id="L47">        }</span>
+<span class="fc" id="L48">    }</span>
+
+    public void waitForPageLoad(long timeout) {
+<span class="nc" id="L51">        driver.manage().timeouts().pageLoadTimeout(timeout, TimeUnit.SECONDS);</span>
+<span class="nc" id="L52">    }</span>
+
+    public WebElement waitFor(By by, long waitTime) {
+<span class="nc" id="L55">        WebDriverWait wait = getWaitDriver(waitTime);</span>
+<span class="nc" id="L56">        return wait.until(ExpectedConditions.presenceOfElementLocated(by));</span>
+    }
+
+    public WebElement waitFor(By by) {
+<span class="nc" id="L60">        return waitFor(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    public List&lt;WebElement&gt; waitForList(By by, long waitTime) {
+<span class="nc" id="L64">        WebDriverWait wait = getWaitDriver(waitTime);</span>
+<span class="nc" id="L65">        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));</span>
+    }
+
+    public List&lt;WebElement&gt; waitForList(By by) {
+<span class="nc" id="L69">        return waitForList(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    public List&lt;WebElement&gt; waitForVisibleList(By by, long waitTime) {
+<span class="nc" id="L73">        WebDriverWait wait = getWaitDriver(waitTime);</span>
+        try {
+<span class="nc" id="L75">            return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));</span>
+        }
+<span class="nc" id="L77">        catch (StaleElementReferenceException ex) {</span>
+<span class="nc" id="L78">            return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));</span>
+        }
+    }
+
+    public List&lt;WebElement&gt; waitForVisibleList(By by) {
+<span class="nc" id="L83">        return waitForVisibleList(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    public WebElement waitForVisible(By by, long waitTime) {
+<span class="fc" id="L87">        WebDriverWait wait = getWaitDriver(waitTime);</span>
+<span class="fc" id="L88">        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));</span>
+    }
+
+    public WebElement waitForVisible(By by) {
+<span class="fc" id="L92">        return waitForVisible(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    public WebElement waitForElementToBeClickable(By by, long waitTime) {
+<span class="nc" id="L96">        WebDriverWait wait = getWaitDriver(waitTime);</span>
+<span class="nc" id="L97">        return wait.until(ExpectedConditions.elementToBeClickable(by));</span>
+    }
+
+    public WebElement waitForElementToBeClickable(By by) {
+<span class="nc" id="L101">        return waitForElementToBeClickable(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    private WebDriverWait getWaitDriver(long waitTime) {
+<span class="fc" id="L105">        return new WebDriverWait(driver, waitTime);</span>
+    }
+
+    public WebElement findByElement(By by) {
+<span class="fc" id="L109">        WebElement webElement = driver.findElement(by);</span>
+<span class="fc" id="L110">        return webElement;</span>
+    }
+
+    public List&lt;WebElement&gt; findByElements(By by) {
+<span class="fc" id="L114">        List&lt;WebElement&gt; webElements = driver.findElements(by);</span>
+<span class="fc" id="L115">        return webElements;</span>
+    }
+
+    public static List&lt;WebElement&gt; getWebElementList(WebDriver driver, String elementXPath) {
+<span class="nc" id="L119">        List&lt;WebElement&gt; elements = (new WebDriverWait(driver, DEFAULT_WAIT_TIME)).</span>
+                until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(elementXPath)));
+<span class="nc" id="L121">        return elements;</span>
+    }
+
+    public static WebElement getWebElement(WebDriver driver, String elementXPath) {
+<span class="nc" id="L125">        WebElement element = (new WebDriverWait(driver, DEFAULT_WAIT_TIME)).</span>
+                until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
+<span class="nc" id="L127">        return element;</span>
+    }
+
+    public void selectByValue(By by, String selectOption) {
+<span class="nc" id="L131">        Select selectBox = new Select(waitFor(by));</span>
+<span class="nc" id="L132">        selectBox.selectByValue(selectOption);</span>
+<span class="nc" id="L133">    }</span>
+
+    public WebElement waitForClickable(By by, long waitTime) {
+<span class="nc" id="L136">        WebDriverWait wait = new WebDriverWait(driver, waitTime);</span>
+<span class="nc" id="L137">        return wait.until(ExpectedConditions.elementToBeClickable(by));</span>
+    }
+
+    public WebElement waitForClickable(By by) {
+<span class="nc" id="L141">        return waitFor(by, DEFAULT_WAIT_TIME);</span>
+    }
+
+    public void switchHandleToWindow(String windowTitle) {
+<span class="nc bnc" id="L145" title="All 2 branches missed.">        for (String winHandle : driver.getWindowHandles()) {</span>
+<span class="nc" id="L146">            driver.switchTo().window(winHandle);</span>
+<span class="nc bnc" id="L147" title="All 2 branches missed.">            if ( driver.getTitle().equalsIgnoreCase(windowTitle) ) {</span>
+<span class="nc" id="L148">                break;</span>
+            }
+<span class="nc" id="L150">        }</span>
+<span class="nc" id="L151">    }</span>
+
+    public void clickOnVisible(By by) {
+<span class="nc" id="L154">        WebElement element = waitForVisible(by);</span>
+<span class="nc" id="L155">        element.click();</span>
+<span class="nc" id="L156">    }</span>
+
+    public void clickOn(By by) {
+<span class="nc" id="L159">        WebElement element = waitForClickable(by);</span>
+<span class="nc" id="L160">        element.click();</span>
+<span class="nc" id="L161">    }</span>
+
+    public void doubleClick(By by) {
+<span class="nc" id="L164">        Actions actions = new Actions(driver);</span>
+<span class="nc" id="L165">        WebElement event = driver.findElement(by);</span>
+<span class="nc" id="L166">        actions.moveToElement(event);</span>
+<span class="nc" id="L167">        actions.doubleClick().build().perform();</span>
+<span class="nc" id="L168">    }</span>
+
+    public void populateInputField(String fieldValue, By by, boolean pressTabKey) {
+<span class="nc" id="L171">        WebElement inputField = waitForVisible(by);</span>
+<span class="nc" id="L172">        inputField.sendKeys(Keys.chord(Keys.CONTROL, &quot;a&quot;), fieldValue);</span>
+<span class="nc bnc" id="L173" title="All 2 branches missed.">        if (pressTabKey) {</span>
+<span class="nc" id="L174">            inputField.sendKeys(&quot;\t&quot;);</span>
+        }
+<span class="nc" id="L176">    }</span>
+
+    public void typeOn(By by, String inputText) {
+<span class="nc" id="L179">        WebElement inputField = waitForVisible(by);</span>
+<span class="nc" id="L180">        inputField.sendKeys(inputText);</span>
+<span class="nc" id="L181">    }</span>
+
+    public boolean verifyElementExists(String elementName) {
+<span class="nc" id="L184">        String source = driver.getPageSource();</span>
+<span class="nc" id="L185">        return source.contains(elementName);</span>
+    }
+
+    public boolean verifyElementExists(By by) {
+<span class="nc" id="L189">        WebElement element = waitFor(by);</span>
+<span class="nc" id="L190">        return element.isDisplayed();</span>
+    }
+
+    public boolean verifyElementDoesNotExist(String elementName) {
+<span class="nc" id="L194">        String source = driver.getPageSource();</span>
+<span class="nc bnc" id="L195" title="All 2 branches missed.">        return !source.contains(elementName);</span>
+    }
+//
+//    public void waitForAjax()	{
+//        while (true) {
+//            JavascriptExecutor ex = (JavascriptExecutor)driver;
+//            if ((boolean)ex.executeScript(&quot;return jQuery.active == 0&quot;))
+//                break;
+//            sleep(100);
+//        }
+//    }
+
+    public boolean verifyEnabledStatus(By by) {
+<span class="nc" id="L208">        WebElement element = waitFor(by);</span>
+<span class="nc" id="L209">        return element.isEnabled();</span>
+    }
+
+    public boolean verifyDisabledStatus(By by) {
+<span class="nc" id="L213">        WebElement element = waitFor(by);</span>
+<span class="nc bnc" id="L214" title="All 2 branches missed.">        return !element.isEnabled();</span>
+    }
+
+    public boolean closePopUpWindow(String windowName) {
+<span class="nc" id="L218">        boolean hasToCloseThePopUpWindow = false;</span>
+<span class="nc bnc" id="L219" title="All 2 branches missed.">        for (String winHandle : driver.getWindowHandles()) {</span>
+<span class="nc" id="L220">            driver.switchTo().window(winHandle);</span>
+<span class="nc bnc" id="L221" title="All 2 branches missed.">            if ( driver.getWindowHandle().equals(windowName) ) {</span>
+<span class="nc" id="L222">                driver.close();</span>
+<span class="nc" id="L223">                hasToCloseThePopUpWindow = true;</span>
+            }
+<span class="nc" id="L225">        }</span>
+<span class="nc" id="L226">        return hasToCloseThePopUpWindow;</span>
+    }
+
+    public WebElement findStaleElement(By by) throws StaleElementReferenceException {
+        try {
+<span class="nc" id="L231">            return driver.findElement(by);</span>
+<span class="nc" id="L232">        } catch (StaleElementReferenceException e) {</span>
+<span class="nc" id="L233">            logger.info(&quot;Stale Element: '&quot; + by + &quot;' on page &quot; + driver.getCurrentUrl());</span>
+<span class="nc" id="L234">            throw e;</span>
+        }
+    }
+
+    private WebElement findElement(By by) {
+        try {
+<span class="nc" id="L240">            return driver.findElement(by);</span>
+<span class="nc" id="L241">        } catch (NoSuchElementException e) {</span>
+<span class="nc" id="L242">            logger.info(&quot;Could not find - '&quot; + by + &quot;' on page &quot; + driver.getCurrentUrl());</span>
+<span class="nc" id="L243">            throw e;</span>
+        }
+    }
+
+    public WebElement findElementAndWaitElementToPresent(By by, int timeoutInSeconds) {
+        try {
+<span class="nc" id="L249">            WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);</span>
+<span class="nc" id="L250">            wait.until(ExpectedConditions.presenceOfElementLocated(by));</span>
+<span class="nc" id="L251">            return findElement(by);</span>
+<span class="nc" id="L252">        } catch (TimeoutException e) {</span>
+<span class="nc" id="L253">            logger.info(&quot;Element is not present: &quot; + by + &quot; on page &quot; + driver.getCurrentUrl());</span>
+<span class="nc" id="L254">            throw e;</span>
+        }
+    }
+
+    public boolean verifyElementExist(By by) {
+        try {
+<span class="nc" id="L260">            WebElement element = waitFor(by, 3);</span>
+<span class="nc" id="L261">            return true;</span>
+        }
+<span class="nc" id="L263">        catch (Exception e) {</span>
+<span class="nc" id="L264">            e.printStackTrace();</span>
+        }
+<span class="nc" id="L266">        return false;</span>
+    }
+
+    public void clickOnDropDown(By by) {
+<span class="nc" id="L270">        WebElement dropDown = waitForClickable(by);</span>
+<span class="nc" id="L271">        dropDown.click();</span>
+<span class="nc" id="L272">    }</span>
+
+    public void selectFromDropDownByDataLabelAttribute(By by, String dataLabelAttributeValue) {
+<span class="nc" id="L275">        List&lt;WebElement&gt; dropDownListValues = waitForVisibleList(by);</span>
+<span class="nc bnc" id="L276" title="All 2 branches missed.">        for (WebElement dropDownListValue : dropDownListValues) {</span>
+<span class="nc bnc" id="L277" title="All 2 branches missed.">            if (dataLabelAttributeValue.equals(dropDownListValue.getAttribute(&quot;data-label&quot;).trim())) {</span>
+<span class="nc" id="L278">                dropDownListValue.click();</span>
+<span class="nc" id="L279">                break;</span>
+            }
+<span class="nc" id="L281">        }</span>
+<span class="nc" id="L282">    }</span>
+
+    public void selectFromMultiSelectionListByText(By by, String textValue) {
+<span class="nc" id="L285">        List&lt;WebElement&gt; multiSelectionValues = waitForVisibleList(by);</span>
+<span class="nc bnc" id="L286" title="All 2 branches missed.">        for (WebElement multiSelectionValue : multiSelectionValues) {</span>
+<span class="nc bnc" id="L287" title="All 2 branches missed.">            if (textValue.equals(multiSelectionValue.getText())) {</span>
+<span class="nc" id="L288">                multiSelectionValue.click();</span>
+<span class="nc" id="L289">                break;</span>
+            }
+<span class="nc" id="L291">        }</span>
+<span class="nc" id="L292">    }</span>
+
+    protected void takeScreenshot() {
+<span class="nc" id="L295">        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);</span>
+<span class="nc" id="L296">        String screenshotPath = System.getProperty(&quot;screenshotPath&quot;);</span>
+
+<span class="nc bnc" id="L298" title="All 2 branches missed.">        if (!screenshotPath.isEmpty()) {</span>
+            try {
+<span class="nc" id="L300">                FileUtils.copyFile(scrFile, new File(screenshotPath), true);</span>
+            }
+<span class="nc" id="L302">            catch (IOException e) {</span>
+<span class="nc" id="L303">                e.printStackTrace();</span>
+<span class="nc" id="L304">                System.out.println(&quot;Error saving screenshot into file.&quot;);</span>
+<span class="nc" id="L305">            }</span>
+        }
+<span class="nc" id="L307">    }</span>
+
+    public void clearField(By by) {
+<span class="nc" id="L310">        driver.findElement(by).clear();</span>
+<span class="nc" id="L311">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.2.201302030002</span></div></body></html>

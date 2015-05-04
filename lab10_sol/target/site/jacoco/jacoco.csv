@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+lab10_sol,com.bemach.labguide.pages,AdoptMePage,0,86,0,0,0,18,0,5,0,5
+lab10_sol,com.bemach.labguide.pages,PuppiesMainPage,0,81,1,3,0,20,1,6,0,5
+lab10_sol,com.bemach.labguide.pages,ViewDetailsPage,0,36,0,0,0,8,0,3,0,3
+lab10_sol,com.bemach.labguide.pages,OrderPage,12,119,0,4,2,24,1,6,1,4
+lab10_sol,com.bemach.labguide.common,Hook.new Thread() {...},7,3,2,0,4,1,2,1,1,1
+lab10_sol,com.bemach.labguide.common,PaymentInfo,0,15,0,0,0,5,0,1,0,1
+lab10_sol,com.bemach.labguide.common,Hook,18,28,3,5,4,8,4,2,1,1
+lab10_sol,com.bemach.labguide.common,Browser,517,71,24,0,120,19,49,10,37,10

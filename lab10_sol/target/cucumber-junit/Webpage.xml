@@ -1,5 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.025368">
-<testcase classname="Getting errors when entering invalid payment info" name="Adopting one puppy from the website" time="11.025368">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="16" time="78.933974">
+<testcase classname="Adopting a puppy" name="Adopting one puppy from the website" time="11.35765">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting one puppy from the website" time="3.770445">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with:...........................................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="6.511202">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I complete adopting these puppies:.....................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="3.844248">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Check":...................................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="3.961314">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Hanna"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Credit card":.............................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting several puppies" name="Adopting two puppies from the website" time="4.01815">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Ruby Sue".........................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Purchase order":..........................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting two puppies" name="Adopting two puppies from the website" time="5.194522">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click on Adopt Another Puppy..........................................passed
+And I click the View Details button for "Hanna".............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting one puppy from the website" time="3.890855">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting two puppies from the website" time="5.556683">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click on Adopt Another Puppy..........................................passed
+And I click the View Details button for "Hanna".............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting one puppy from the website" time="3.862328">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with:...........................................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting two puppies from the website" time="7.049449">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I complete adopting these puppies:.....................................passed
+And I complete the adoption using this information "Mr. Cheezy", "123 Main Street", "cheezy@mail.com", "Check".passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting two puppies from the website" time="3.84344">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Check":...................................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting two puppies from the website" time="3.895146">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Hanna"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Credit card":.............................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Adopting a puppy" name="Adopting two puppies from the website" time="4.103203">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Ruby Sue".........................passed
+And I click the Adopt Me! button............................................passed
+And I click the Complete the Adoption button................................passed
+And I complete the adoption with "Purchase order":..........................passed
+Then I should see "Thank you for adopting a puppy!".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Change mind after adopting a puppy" name="Changing mind after adopting a puppy before pay" time="4.724372">
+<system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
+When I click the View Details button for "Brook"............................passed
+And I click the Adopt Me! button............................................passed
+And I click the Change your mind button and accept OK.......................passed
+Then I should be back on the home page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Getting errors when entering invalid payment info" name="Adopting one puppy from the website" time="3.350967">
 <system-out><![CDATA[Given I am on the puppy adoption site "http://localhost:3000"...............passed
 When I click the View Details button for "Brook"............................passed
 And I click the Adopt Me! button............................................passed

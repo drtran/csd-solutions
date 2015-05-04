@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="96.506" errors="0" skipped="0" tests="113" name="com.bemach.labguide.RunLab10Cukes">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\csd2015\bin\jdk1.7.0_51\jre\bin"/>
+    <property name="java.vm.version" value="24.51-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="RunLab10Cukes"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\csd2015\java-ws\lab10_sol"/>
+    <property name="java.runtime.version" value="1.7.0_51-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\csd2015\java-ws\lab10_sol"/>
+    <property name="java.endorsed.dirs" value="C:\csd2015\bin\jdk1.7.0_51\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="C:\csd2015\java-ws\lab10_sol\target\surefire\surefirebooter7610389959350813983.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\jacoco\org.jacoco.agent\0.6.2.201302030002\org.jacoco.agent-0.6.2.201302030002-runtime.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\KTRANB~1.000\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\csd2015\bin\jdk1.7.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\csd2015\bin\curl-7.39.0-win64\bin;C:\csd2015\bin\nodejs;C:\csd2015\bin\jdk1.7.0_51\bin;;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Haskell\bin;C:\csd\haskell\lib\extralibs\bin;C:\csd\haskell\bin;c:\csd2015\jdk1.8.0_25\bin;C:\Python34\;C:\Python34\Scripts;E:\app\ktran\product\11.2.0\client_1;E:\app\ktran\product\11.2.0\client_1\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Calibre2\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Vim\vim73;F:\svn\bin;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.6\;C:\HashiCorp\Vagrant\bin;C:\csd\haskell\mingw\bin;C:\csd\nodejs\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Users\ktran.BEMINC.000\AppData\Roaming\cabal\bin;C:\Ruby193\bin;f:\dev\training\git\bin;c:\phantomjs-1.9.7;C:\Users\ktran.BEMINC.000\AppData\Roaming\npm;C:\csd2015\bin\eclipse-luna-64;C:\csd2015\bin\sonar-runner-2.3\bin;C:\csd2015\bin\sonar-runner-2.3\bin;C:\csd2015\bin\apache-maven-3.0.3\bin;C:\csd2015\bin\apache-tomcat-8.0.15\bin;C:\csd2015\bin\mongodb\bin;."/>
+    <property name="surefire.test.class.path" value="C:\csd2015\java-ws\lab10_sol\target\test-classes;C:\csd2015\java-ws\lab10_sol\target\classes;C:\Users\ktran.BEMINC.000\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-picocontainer\1.1.5\cucumber-picocontainer-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-java\1.1.5\cucumber-java-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.3\cucumber-jvm-deps-1.0.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\gherkin\2.12.1\gherkin-2.12.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\picocontainer\picocontainer\2.14.3\picocontainer-2.14.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-junit\1.1.5\cucumber-junit-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-core\1.1.5\cucumber-core-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\ktran.BEMINC.000\.m2\repository\com\google\guava\guava\15.0\guava-15.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\ktran.BEMINC.000\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.2"/>
+    <property name="user.home" value="C:\Users\ktran.BEMINC.000"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ktran"/>
+    <property name="java.class.path" value="C:\csd2015\java-ws\lab10_sol\target\test-classes;C:\csd2015\java-ws\lab10_sol\target\classes;C:\Users\ktran.BEMINC.000\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-picocontainer\1.1.5\cucumber-picocontainer-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-java\1.1.5\cucumber-java-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.3\cucumber-jvm-deps-1.0.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\gherkin\2.12.1\gherkin-2.12.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\picocontainer\picocontainer\2.14.3\picocontainer-2.14.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-junit\1.1.5\cucumber-junit-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-core\1.1.5\cucumber-core-1.1.5.jar;C:\Users\ktran.BEMINC.000\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\ktran.BEMINC.000\.m2\repository\com\google\guava\guava\15.0\guava-15.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\ktran.BEMINC.000\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\ktran.BEMINC.000\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\csd2015\bin\jdk1.7.0_51\jre"/>
+    <property name="sun.java.command" value="C:\csd2015\java-ws\lab10_sol\target\surefire\surefirebooter7610389959350813983.jar C:\csd2015\java-ws\lab10_sol\target\surefire\surefire5228617163472069005tmp C:\csd2015\java-ws\lab10_sol\target\surefire\surefire5776866132808712400tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_51"/>
+    <property name="java.ext.dirs" value="C:\csd2015\bin\jdk1.7.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\csd2015\bin\jdk1.7.0_51\jre\lib\resources.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\rt.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\jsse.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\jce.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\charsets.jar;C:\csd2015\bin\jdk1.7.0_51\jre\lib\jfr.jar;C:\csd2015\bin\jdk1.7.0_51\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="C:\Users\ktran.BEMINC.000\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.002" classname="Scenario: Adopting one puppy from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.003" classname="Scenario: Adopting one puppy from the website" name="Scenario: Adopting one puppy from the website"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I complete the adoption with:"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.002" classname="Scenario: Adopting one puppy from the website" name="Scenario: Adopting one puppy from the website"/>
+  <testcase time="0.001" classname="Scenario: Adopting two puppies from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="When I complete adopting these puppies:"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.158" classname="Scenario: Adopting two puppies from the website" name="Scenario: Adopting two puppies from the website"/>
+  <testcase time="0" classname="| Brook | Check |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="| Brook | Check |" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="| Brook | Check |" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="| Brook | Check |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0.001" classname="| Brook | Check |" name="And I complete the adoption with &quot;Check&quot;:"/>
+  <testcase time="0" classname="| Brook | Check |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.002" classname="| Brook | Check |" name="| Brook | Check |"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0.001" classname="| Hanna | Credit card |" name="When I click the View Details button for &quot;Hanna&quot;"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I complete the adoption with &quot;Credit card&quot;:"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.002" classname="| Hanna | Credit card |" name="| Hanna | Credit card |"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="When I click the View Details button for &quot;Ruby Sue&quot;"/>
+  <testcase time="0.001" classname="| Ruby Sue | Purchase order |" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="And I complete the adoption with &quot;Purchase order&quot;:"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="| Ruby Sue | Purchase order |" name="| Ruby Sue | Purchase order |"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click on Adopt Another Puppy"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the View Details button for &quot;Hanna&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.002" classname="Scenario: Adopting two puppies from the website" name="Scenario: Adopting two puppies from the website"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="Scenario: Adopting one puppy from the website"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click on Adopt Another Puppy"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the View Details button for &quot;Hanna&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting two puppies from the website" name="Scenario: Adopting two puppies from the website"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I complete the adoption with:"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="Scenario: Adopting one puppy from the website"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting two puppies from the website" name="When I complete adopting these puppies:"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="And I complete the adoption using this information &quot;Mr. Cheezy&quot;, &quot;123 Main Street&quot;, &quot;cheezy@mail.com&quot;, &quot;Check&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting two puppies from the website" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting two puppies from the website" name="Scenario: Adopting two puppies from the website"/>
+  <testcase time="0" classname="| Brook | Check |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="| Brook | Check |" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0.001" classname="| Brook | Check |" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="| Brook | Check |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="| Brook | Check |" name="And I complete the adoption with &quot;Check&quot;:"/>
+  <testcase time="0.001" classname="| Brook | Check |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="| Brook | Check |" name="| Brook | Check |"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="When I click the View Details button for &quot;Hanna&quot;"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="And I complete the adoption with &quot;Credit card&quot;:"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0" classname="| Hanna | Credit card |" name="| Hanna | Credit card |"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="When I click the View Details button for &quot;Ruby Sue&quot;"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="And I click the Adopt Me! button"/>
+  <testcase time="0.001" classname="| Ruby Sue | Purchase order |" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="And I complete the adoption with &quot;Purchase order&quot;:"/>
+  <testcase time="0" classname="| Ruby Sue | Purchase order |" name="Then I should see &quot;Thank you for adopting a puppy!&quot;"/>
+  <testcase time="0.001" classname="| Ruby Sue | Purchase order |" name="| Ruby Sue | Purchase order |"/>
+  <testcase time="0" classname="Scenario: Changing mind after adopting a puppy before pay" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Changing mind after adopting a puppy before pay" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Changing mind after adopting a puppy before pay" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Changing mind after adopting a puppy before pay" name="And I click the Change your mind button and accept OK"/>
+  <testcase time="0" classname="Scenario: Changing mind after adopting a puppy before pay" name="Then I should be back on the home page"/>
+  <testcase time="0.001" classname="Scenario: Changing mind after adopting a puppy before pay" name="Scenario: Changing mind after adopting a puppy before pay"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Given I am on the puppy adoption site &quot;http://localhost:3000&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="When I click the View Details button for &quot;Brook&quot;"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Adopt Me! button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I click the Complete the Adoption button"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="And I complete the adoption using no information"/>
+  <testcase time="0" classname="Scenario: Adopting one puppy from the website" name="Then I should see this error message &quot;5 errors prohibited this order from being saved:&quot;"/>
+  <testcase time="0.001" classname="Scenario: Adopting one puppy from the website" name="Scenario: Adopting one puppy from the website"/>
+</testsuite>
