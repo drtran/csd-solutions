@@ -47,8 +47,8 @@
       <file leaf-file-name="SpecRunner.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/jasmine/SpecRunner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.651341">
-              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.5536398">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -610,12 +610,12 @@
       <created>1430690807738</created>
       <option name="number" value="Default" />
       <updated>1430690807738</updated>
-      <workItem from="1430690811291" duration="543000" />
+      <workItem from="1430690811291" duration="1529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="543000" />
+    <option name="totallyTimeSpent" value="1529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="278" y="16" width="1400" height="992" extended-state="0" />
@@ -688,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/jasmine/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.651341">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.5536398">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>

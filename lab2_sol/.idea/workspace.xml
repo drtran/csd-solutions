@@ -36,26 +36,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MultipleOfThreeAndFiveSolverTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultipleOfThreeAndFiveSolverTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.08153477">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipleOfThreeAndFiveSolver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultipleOfThreeAndFiveUseParameterizedTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveUseParameterizedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleOfThreeAndFiveSolver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32733813">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
@@ -581,7 +587,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -642,8 +648,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1066,11 +1072,12 @@
       <workItem from="1429963696769" duration="7366000" />
       <workItem from="1429992196952" duration="26000" />
       <workItem from="1430648899729" duration="86000" />
+      <workItem from="1430698808484" duration="129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7478000" />
+    <option name="totallyTimeSpent" value="7607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="479" y="23" width="1400" height="992" extended-state="0" />
@@ -1121,10 +1128,6 @@
           <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1143,10 +1146,24 @@
           <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1166,25 +1183,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolverTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-          </folding>
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveUseParameterizedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32733813">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bemach/labguide/lab2/MultipleOfThreeAndFiveSolverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08153477">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

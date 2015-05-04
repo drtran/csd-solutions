@@ -5,11 +5,10 @@ import com.bemach.labguide.pages.PuppiesMainPage;
 import com.bemach.labguide.pages.ViewDetailsPage;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-
-import static junit.framework.Assert.assertTrue;
 
 /**
  * Created by ktran on 4/25/2015.
